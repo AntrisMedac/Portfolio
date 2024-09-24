@@ -1,0 +1,39 @@
+body {
+    background-color: #121212; /* Fondo oscuro */
+    color: #fff; /* Texto claro */
+}
+
+body.light-mode {
+    background-color: #f5f5f5; /* Fondo claro para el modo claro */
+    color: #000; /* Texto oscuro */
+}
+
+#perfil {
+    width: 50px;
+    height: auto;
+}
+
+#botonDisponible {
+    border: 2px solid #39ff14; /* Color verde neón */
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: transparent;
+    cursor: pointer;
+    box-shadow: 0 0 10px #39ff14, 0 0 40px #39ff14, 0 0 80px #39ff14;
+    transition: all 0.3s ease-in-out;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 10px #39ff14, 0 0 40px #39ff14, 0 0 80px #39ff14;
+    }
+    50% {
+        box-shadow: 0 0 20px #39ff14, 0 0 60px #39ff14, 0 0 120px #39ff14;
+    }
+    100% {
+        box-shadow: 0 0 10px #39ff14, 0 0 40px #39ff14, 0 0 80px #39ff14;
+    }
+}
