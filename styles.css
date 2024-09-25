@@ -1,5 +1,10 @@
 body {
-    background-color: #121212; /* Fondo oscuro */
+    height: 100vh;  /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+    margin: 0;      /* Elimina cualquier margen predeterminado */
+    background: linear-gradient(to bottom, 
+      #110028,  /* Color en la parte superior */
+      #07000f   /* Color en la parte inferior */
+    );
     color: #fff; /* Texto claro */
 }
 
@@ -8,12 +13,23 @@ body.light-mode {
     color: #000; /* Texto oscuro */
 }
 
+#cabecera{
+    border-radius: 15%;
+    border: 2px;
+    border-color: #39ff14;
+}
+
+#Inicio{
+    margin-top: 8%;
+}
+
 #perfil {
     width: 50px;
     height: auto;
 }
 
 #botonDisponible {
+    margin-left: 3%;
     border: 2px solid #39ff14; /* Color verde neón */
     border-radius: 12px;
     padding: 10px 20px;
