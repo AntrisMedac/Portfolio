@@ -6,6 +6,7 @@ body {
       #07000f   /* Color en la parte inferior */
     );
     color: #fff; /* Texto claro */
+    font-family: 'Onest', sans-serif;
 }
 
 body.light-mode {
@@ -20,12 +21,16 @@ body.light-mode {
 }
 
 #Inicio{
-    margin-top: 8%;
+    margin-top: 5%;
 }
 
 #perfil {
     width: 50px;
     height: auto;
+}
+
+#Hey{
+    margin-top: 3%;
 }
 
 #botonDisponible {
@@ -52,4 +57,8 @@ body.light-mode {
     100% {
         box-shadow: 0 0 10px #39ff14, 0 0 40px #39ff14, 0 0 80px #39ff14;
     }
+}
+
+#Bio{
+    margin-top: 5%;
 }
