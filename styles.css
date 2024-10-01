@@ -15,23 +15,35 @@ body.light-mode {
 }
 
 #cabecera{
-    justify-content: center;
     margin-top: 1%;
-    font-size: 16px;
+    font-size: 14px;
     color: #ffffff;
-    background-color: #151a4d;
+    background-color: #110028;
     cursor: pointer;
     border-radius: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 
+.nav-link {
+    color: #ffffff; /* Tomate */
+}
 
 #Inicio{
-    margin-top: 8%;
+    margin-top: 11%;
 }
 
 #perfil {
     width: 50px;
     height: auto;
+    font-size: 35px;
+}
+
+#Bio{
+    margin-top: 1%;
+    margin-bottom: 3%;
+    font-size: 20px;
 }
 
 #Hey{
@@ -40,33 +52,28 @@ body.light-mode {
 
 #botonDisponible {
     margin-left: 3%;
-    border: 2px solid #39ff14; /* Color verde neón */
+    border: 2px solid #68fa79; /* Color verde neón */
     border-radius: 12px;
     padding: 10px 20px;
     font-size: 18px;
     color: #ffffff;
     background-color: transparent;
     cursor: pointer;
-    box-shadow: 0 0 10px #39ff14, 0 0 40px #39ff14, 0 0 80px #39ff14;
+    box-shadow: 0 0 10px #68fa79, 0 0 40px #68fa79, 0 0 80px #68fa79;
     transition: all 0.3s ease-in-out;
     animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
     0% {
-        box-shadow: 0 0 10px #39ff14, 0 0 5px #39ff14, 0 0 10px #39ff14;
+        box-shadow: 0 0 10px #68fa79, 0 0 2px #68fa79, 0 0 5px #68fa79;
     }
     50% {
-        box-shadow: 0 0 20px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14;
+        box-shadow: 0 0 20px #68fa79, 0 0 2px #68fa79, 0 0 5px #68fa79;
     }
     100% {
-        box-shadow: 0 0 10px #39ff14, 0 0 5px #39ff14, 0 0 10px #39ff14;
+        box-shadow: 0 0 10px #68fa79, 0 0 2px #68fa79, 0 0 5px #68fa79;
     }
-}
-
-#Bio{
-    margin-top: 1%;
-    margin-bottom: 3%;
 }
 
 #Trabajos{
