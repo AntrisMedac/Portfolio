@@ -1,5 +1,5 @@
 body {
-    height: 100vh;  /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+    height: 100%;  /* Asegura que el cuerpo ocupe toda la altura de la ventana */
     margin: 0;      /* Elimina cualquier margen predeterminado */
     background: linear-gradient(to bottom, 
       #110028,  /* Color en la parte superior */
@@ -15,13 +15,18 @@ body.light-mode {
 }
 
 #cabecera{
-    border-radius: 15%;
-    border: 2px;
-    border-color: #39ff14;
+    justify-content: center;
+    margin-top: 1%;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #151a4d;
+    cursor: pointer;
+    border-radius: 20px;
 }
 
+
 #Inicio{
-    margin-top: 5%;
+    margin-top: 8%;
 }
 
 #perfil {
@@ -49,16 +54,21 @@ body.light-mode {
 
 @keyframes pulse {
     0% {
-        box-shadow: 0 0 10px #39ff14, 0 0 40px #39ff14, 0 0 80px #39ff14;
+        box-shadow: 0 0 10px #39ff14, 0 0 5px #39ff14, 0 0 10px #39ff14;
     }
     50% {
-        box-shadow: 0 0 20px #39ff14, 0 0 60px #39ff14, 0 0 120px #39ff14;
+        box-shadow: 0 0 20px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14;
     }
     100% {
-        box-shadow: 0 0 10px #39ff14, 0 0 40px #39ff14, 0 0 80px #39ff14;
+        box-shadow: 0 0 10px #39ff14, 0 0 5px #39ff14, 0 0 10px #39ff14;
     }
 }
 
 #Bio{
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+#Trabajos{
     margin-top: 5%;
 }
