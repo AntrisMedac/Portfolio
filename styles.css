@@ -17,8 +17,8 @@ body.light-mode {
 #cabecera{
     margin-top: 1%;
     font-size: 14px;
-    color: #ffffff;
-    background-color: #110028;
+    color: #68fa79;
+    background-color: #2e0366;
     cursor: pointer;
     border-radius: 20px;
     position: fixed;
@@ -27,7 +27,7 @@ body.light-mode {
 }
 
 .nav-link {
-    color: #ffffff; /* Tomate */
+    color: #68fa79; /* Tomate */
 }
 
 #Inicio{
@@ -38,13 +38,6 @@ body.light-mode {
     width: 50px;
     height: auto;
     font-size: 35px;
-}
-
-#coches {
-    font-size: 35px;
-    text-align: center;
-    display: block;
-    margin: 0 auto;
 }
 
 #Bio{
@@ -61,8 +54,23 @@ body.light-mode {
     margin-left: 3%;
     border: 2px solid #68fa79; /* Color verde neón */
     border-radius: 12px;
-    padding: 10px 20px;
-    font-size: 18px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: transparent;
+    cursor: pointer;
+    box-shadow: 0 0 10px #68fa79, 0 0 40px #68fa79, 0 0 80px #68fa79;
+    transition: all 0.3s ease-in-out;
+    animation: pulse 2s infinite;
+}
+
+#botonLinkedin{
+    margin-top: 3%;
+    margin-bottom: 8%;
+    border: 2px solid #68fa79; /* Color verde neón */
+    border-radius: 12px;
+    padding: 5px 10px;
+    font-size: 14px;
     color: #ffffff;
     background-color: transparent;
     cursor: pointer;
@@ -86,3 +94,14 @@ body.light-mode {
 #Trabajos{
     margin-top: 5%;
 }
+
+#color{
+    color: #68fa79;
+}
+
+/* #coches {
+    font-size: 35px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+} */
