@@ -8,6 +8,34 @@
     <link rel="stylesheet" type="text/css" href="/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400&display=swap" rel="stylesheet">
 
+    <style>
+        /* Agregando animaciones y transiciones */
+        #perfil {
+            width: 150px;
+            border-radius: 50%;
+            transition: transform 0.5s ease;
+        }
+        #perfil:hover {
+            transform: scale(1.1);
+        }
+        .btn {
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+
     <title>Portfolio</title>
 </head>
 <body>
@@ -28,6 +56,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="https://www.linkedin.com/in/antonio-risueño-espinosa-8aa9851a4/" target="_blank">Contacto</a>
                     </li>
+                    <li class="nav-item">
+                        <a id="toggleMode" class="nav-link">Modo oscuro</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -37,23 +68,23 @@
         <div class="row">
             <div class="col-7 mx-auto">
                 <img src="/Images/perfil.png" alt="Perfil" id="perfil">
-                <a class="btn" id="botonDisponible" href="https://www.linkedin.com/in/antonio-risueño-espinosa-8aa9851a4/" target="_blank" role="button">Disponible para trabajar</a>
+                <a class="btn btn-primary" id="botonDisponible" href="https://www.linkedin.com/in/antonio-risueño-espinosa-8aa9851a4/" target="_blank" role="button">Disponible para trabajar</a>
                 <h1 class="fw-bold" id="Hey">Hey, soy Antonio</h1>
             </div>
         </div>
     </div>  
 
-    <div class="text-right" id="Bio">
+    <div class="text-right fade-in" id="Bio">
         <div class="row">
             <div class="col-7 mx-auto">
                 <div class="col-9">
                     <p href="Descripción">
-                        Soy un estudiante de 22 años en el segundo año del ciclo formativo de <span id="color">Desarrollo de Aplicaciones Web (DAW)</span> , 
+                        Soy un estudiante de 22 años en el segundo año del ciclo formativo de <span id="color">Desarrollo de Aplicaciones Web (DAW)</span>, 
                         con formación previa en <span id="color">Administración y Finanzas</span>.
                     </p>
                 </div>
                 <div class="col-3"></div>
-                <a class="btn" id="botonLinkedin" href="https://www.linkedin.com/in/antonio-risueño-espinosa-8aa9851a4/" target="_blank" role="button">
+                <a class="btn btn-secondary" id="botonLinkedin" href="https://www.linkedin.com/in/antonio-risueño-espinosa-8aa9851a4/" target="_blank" role="button">
                     <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 256 256"><path d="M218.123 218.127h-37.931v-59.403c0-14.165-.253-32.4-19.728-32.4-19.756 0-22.779 15.434-22.779 31.369v60.43h-37.93V95.967h36.413v16.694h.51a39.907 39.907 0 0 1 35.928-19.733c38.445 0 45.533 25.288 45.533 58.186l-.016 67.013ZM56.955 79.27c-12.157.002-22.014-9.852-22.016-22.009-.002-12.157 9.851-22.014 22.008-22.016 12.157-.003 22.014 9.851 22.016 22.008A22.013 22.013 0 0 1 56.955 79.27m18.966 138.858H37.95V95.967h37.97v122.16ZM237.033.018H18.89C8.58-.098.125 8.161-.001 18.471v219.053c.122 10.315 8.576 18.582 18.89 18.474h218.144c10.336.128 18.823-8.139 18.966-18.474V18.454c-.147-10.33-8.635-18.588-18.966-18.453" fill="#0A66C2"/></svg>
                     Linkedin</a>
             </div>
@@ -63,18 +94,17 @@
     <div class="text-right">
         <div class="row">
             <div class="col-7 mx-auto">
-
-                <h2>💼 Experiencia laboral</h2>
+                <h2 class="fade-in">💼 Experiencia laboral</h2>
 
                 <div class="row" id="Trabajos">
-                    <div class="col-6 mx-auto">
+                    <div class="col-6 mx-auto fade-in">
                         <h4>Plataforma Femar S.L.</h4>
                         <h5 id="color">Responsable de control de stock</h5>
                     </div>
 
-                    <div class="col-6 mx-auto">
+                    <div class="col-6 mx-auto fade-in">
                         <p>
-                            Comprobar el buen estado de la mercancia y su correcta documentación.
+                            Comprobar el buen estado de la mercancía y su correcta documentación.
                             Registro de la mercancía recibida en el programa de gestión, así como eliminar el stock
                             dañado o caducado.
                         </p>
@@ -82,15 +112,15 @@
                 </div>
 
                 <div class="row" id="Trabajos">
-                    <div class="col-6 mx-auto">
+                    <div class="col-6 mx-auto fade-in">
                         <h4>Bodega San José S.L.</h4>
                         <h5 id="color">Responsable de barra</h5>
                     </div>
 
-                    <div class="col-6 mx-auto">
+                    <div class="col-6 mx-auto fade-in">
                         <p>
                             Mi principal función era la gestión de cobros de las cuentas y el correcto apunte de las comandas. 
-                            A su vez llevaba tareas como la servir las bebidas y mantener un stock adecuado para las ventas esperadas.
+                            A su vez llevaba tareas como servir las bebidas y mantener un stock adecuado para las ventas esperadas.
                         </p>
                     </div>
                 </div>
@@ -100,19 +130,35 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-6">
-                
-            </div>
-
-            <div class="col-6">
-
+            <div class="col-8 mx-auto">
+                <div class="col-4 fade-in">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../Images/pong.jpg" class="card-img-top" alt="ImgPong">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-4 fade-in">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../Images/myPoker.png" class="card-img-top" alt="ImgPong">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="text-right" id="SobreMi">
         <div class="row">
-            <div class="col-7 mx-auto">
+            <div class="col-7 mx-auto fade-in">
                 <h1>Sobre mi</h1>
                 <p> Me apasiona el desarrollo web, especialmente en el área de back-end, 
                     donde disfruto creando soluciones eficientes y escalables. Mi experiencia laboral en entornos exigentes me ha permitido 
@@ -121,19 +167,44 @@
             </div>
         </div>
     </div>
-    <!-- <div class="text-right" id="coches">
-        <div class="row">
-            <div class="col-7 mx-auto">
-                <h1>Mis Coches favoritos</h1>
-                <img src="/Images/cochesfav.jpg" alt="Perfil" id="coches">
-                <p> Mi pasión, los coches. Desde pequeño me apasiona el mundo del motor y hay algunas piezas que considero esculpidas por los dioses como son
-                    alguno de estos modelos: 
-                    El Fiat Multipla, el Tata Nano, el Toyota Will y el Reliant Robin.
-                </p>
-            </div>
-        </div>
-    </div> -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        // Función para mostrar animaciones al desplazarse
+        const elements = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        elements.forEach(el => {
+            observer.observe(el);
+        });
+
+        const toggleButton = document.getElementById('toggleMode');
+    
+        // Verifica el modo guardado en el almacenamiento local al cargar la página
+        if (localStorage.getItem('mode') === 'dark') {
+            document.body.classList.add('dark-mode');
+            toggleButton.textContent = 'Modo claro';
+        }
+    
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+    
+            // Cambiar el texto del botón según el modo activo
+            if (document.body.classList.contains('dark-mode')) {
+                toggleButton.textContent = 'Modo claro';
+                localStorage.setItem('mode', 'dark'); // Guardar preferencia
+            } else {
+                toggleButton.textContent = 'Modo oscuro';
+                localStorage.setItem('mode', 'light'); // Guardar preferencia
+            }
+        });
+    </script>    
 </body>
 </html>

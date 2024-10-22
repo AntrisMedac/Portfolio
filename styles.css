@@ -6,7 +6,7 @@ body {
       #07000f   /* Color en la parte inferior */
     );
     color: #fff; /* Texto claro */
-    font-family: 'Onest', sans-serif;
+    font-family: "Lucida Console", Monaco, monospace;
 }
 
 body.light-mode {
@@ -98,10 +98,3 @@ body.light-mode {
 #color{
     color: #68fa79;
 }
-
-/* #coches {
-    font-size: 35px;
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-} */
