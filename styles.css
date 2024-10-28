@@ -44,13 +44,19 @@ body {
 #Hey{
     margin-top: 3%;
 }
+#Experiencia{
+    margin-top: 5%;
+}
 
 #Trabajos{
     margin-top: 5%;
 }
+#ProyectoTitulo{
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
 
 #Proyecto{
-    margin-top: 5%;
     margin-bottom: 5%;
 }
 
