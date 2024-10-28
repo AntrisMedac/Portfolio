@@ -48,6 +48,15 @@ body {
     margin-top: 5%;
 }
 
+#conocimientos{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#svg{
+    padding-top: 2%;
+}
+
 #Trabajos{
     margin-top: 5%;
 }
@@ -58,6 +67,10 @@ body {
 
 #Proyecto{
     margin-bottom: 5%;
+}
+
+#formulario{
+    margin-top: 4%;
 }
 
 #botonCustom{
@@ -134,4 +147,9 @@ body {
     flex-grow: 1;
 }
 
-
+hr {
+    border: none; /* Eliminar el borde predeterminado */
+    height: 2px; /* Altura de la línea */
+    background-color: #68fa79; /* Color de la línea */
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
