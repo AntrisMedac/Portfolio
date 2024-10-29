@@ -153,3 +153,33 @@ hr {
     background-color: #68fa79; /* Color de la línea */
     margin: 20px 0; /* Espaciado superior e inferior */
 }
+
+footer {
+    color: #fff; /* Color de texto */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrar el contenido */
+}
+
+.footer-content {
+    max-width: 800px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrar el contenido */
+}
+
+.socials {
+    list-style: none; /* Eliminar el estilo de lista */
+    padding: 0; /* Eliminar el padding */
+}
+
+.socials li {
+    display: inline; /* Mostrar elementos en línea */
+    margin: 0 10px; /* Espaciado entre elementos */
+}
+
+.socials a {
+    color: #fff; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.socials a:hover {
+    text-decoration: underline; /* Subrayar al pasar el ratón */
+}
